@@ -1,0 +1,2 @@
+module SmsTextsHelper
+end

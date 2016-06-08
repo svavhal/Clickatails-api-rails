@@ -1,0 +1,27 @@
+<div class = "panel-body">
+<%= form_for@sms_text, :html=> {class:"form-inline", role:"form"}  do |f| %>
+  <% if @sms_text.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sms_text.errors.count, "error") %> prohibited this sms_text from being saved:</h2>
+
+      <ul>
+      <% @sms_text.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :recipient %>
+    <%= f.text_field :recipient, class:'form-control', required:true%>
+  </div>
+  <div class="form-group">
+    <%= f.label :sms_message %>
+    <%= f.text_area :sms_message, class:'form-control', required:true %>
+  </div>
+    <%= f.submit class:'btn btn-primary' %>
+<% end %>
+</div>
+</div>
+</div>

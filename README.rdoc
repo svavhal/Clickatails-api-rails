@@ -1,0 +1,45 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+Clickatell Ruby API 0.8.2
+gem install clickatell
+
+What is it?
+
+A Ruby interface to the Clickatell SMS gateway API.
+
+What’s new in 0.7?
+
+Fixed bug with the response parser relating to octal numbers (via myronmarston)
+Added support for multiple recipients in one request, up to 100 recipients
+0.7.1: Fixed bug with -b balance command
+Installation
+
+Please note: this gem has been tested on *nix based systems including Linux, BSD and OSX. The sms utility was written with these systems in mind and will not work out of the box on Windows. The API should still work but has not been tested at this time. If you would like Windows support, please submit patches.
+
+Download the latest version of gem or install using RubyGems.
+  $ sudo gem install clickatell
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
