@@ -1,5 +1,5 @@
 # Clickatell SMS API Credentionals
 
-ENV['API_ID'] = '3606435'
-ENV['API_USER_NAME'] = 'sandipvavhal'
-ENV['API_PASSWORD'] = 'sandipv123'
+ENV['API_ID'] = 'your Clickatell API API_ID'
+ENV['API_USER_NAME'] = 'your Clickatell API Username'
+ENV['API_PASSWORD'] = 'your Clickatell API Password'
